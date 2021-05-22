@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../HAL/inc/SmartLock.c 
+
+OBJS += \
+./HAL/inc/SmartLock.o 
+
+C_DEPS += \
+./HAL/inc/SmartLock.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+HAL/inc/%.o: ../HAL/inc/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: AVR Compiler'
+	avr-gcc -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\FreeRTOS\FreeRTOS\Inc" -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\FreeRTOS\FreeRTOS\Src" -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\HAL\inc" -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\HAL\src" -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\MCAL\inc" -I"E:\New folder\Eclipse IDE\WORKSPACE2\SmartLock_RTOS_IMT\MCAL\src" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
